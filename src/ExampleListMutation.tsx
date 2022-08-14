@@ -19,7 +19,7 @@ const useEntries = () => {
   const [entries, setEntries] = useState<Entry[]>([]);
   const addEntry = (message: string) => {
     const id = counterRef.current++;
-    setEntries([...entries, { id, message }]);
+    setEntries((entries) => [...entries, { id, message }]);
     timersRef.current.push(
       setTimeout(() => {
         setEntries((entries) => entries.filter((entry) => entry.id !== id));
