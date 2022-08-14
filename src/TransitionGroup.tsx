@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Transition } from "@headlessui/react";
 
 type ComponentKey = string | number;
-type TransitionElement = React.ReactComponentElement<typeof Transition>;
 
 function getChildKey(child: React.ReactElement<any>): ComponentKey {
   return child.key || "";

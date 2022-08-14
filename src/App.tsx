@@ -3,7 +3,7 @@ import { ExampleListMutation } from "./ExampleListMutation";
 
 const App = () => {
   return (
-    <div className="grid grid-cols-4 gap-10 p-10">
+    <div className="grid grid-cols-3 gap-10 p-10">
       <div className="flex flex-col gap-4">
         Changing a single value:
         <ExampleSingleValue />
